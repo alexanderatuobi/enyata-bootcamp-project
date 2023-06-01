@@ -65,6 +65,14 @@ header h1 {
     text-decoration: none;
     margin-top: 20px;
  }
+
+ .nav-text:hover {
+    text-decoration: underline;
+ }
+
+ #sign-up:hover {
+    text-decoration: underline;
+ }
  
   #releases {
      color: #f63232;
