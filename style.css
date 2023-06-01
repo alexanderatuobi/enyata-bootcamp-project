@@ -49,7 +49,7 @@ header h1 {
     background-color: #f4f4f4;
     height: 70px;
     position: sticky;
-    top: 0px;
+    top: 113px;
  }
 
  #sign-up {
@@ -72,6 +72,10 @@ header h1 {
 
  #sign-up:hover {
     text-decoration: underline;
+ }
+
+ .btn:hover {
+    background-color: #4b4b4b;
  }
  
   #releases {
@@ -202,10 +206,7 @@ article span {
         position: static;
     }
     .banner2{
-        position: absolute;
-        top: 25%;
-        left: 0;
-        width: 300px;
+        display: none;
     }
 
     .banner2 h2 {
@@ -238,5 +239,22 @@ article span {
     .games img {
         width: 120px;
         height: 150px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .games {
+        margin-top: 70px;
+        margin-bottom: 120px;
+        padding: 100px;
+        display: block;
+    }
+
+    #sign-up {
+        font-size: 15px;
+    }
+
+    .nav-text {
+        font-size: 15px;
     }
 }
