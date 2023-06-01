@@ -4,16 +4,16 @@ let email = document.getElementById('email');
 const error = document.querySelector('.error-message');
 const btn = document.querySelector('.btn');
 
-function vanish() {
+function errorMsg() {
     error.style.display = 'none';
 }
 
-btn.addEventListener('click', function(e){
-    e.preventDefault();
+btn.addEventListener('click', function(){
+    // preventDefault();
 
     if(userName.value === '' ||  email.value === ''){
         error.style.display = 'block';
-        setTimeout(vanish, 5000)
+        setTimeout(errorMsg, 5000)
         return;
     }
     let result = `Hello ${userName.value}🎊👨‍💻, your form has been submitted successfully. Your email is ${email.value}`
